@@ -3,32 +3,9 @@ session_start();
 error_reporting(0);
 include('includes/config.php');
 ?>
-<!DOCTYPE HTML>
-<html>
 
-<head>
-	<title>TMS | Sistema de Turismo</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<?php include ('./includes/head.php')?>
 
-	<script type="applijewelleryion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-	<link href="css/style.css" rel='stylesheet' type='text/css' />
-	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
-	<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
-	<link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-	<link href="css/font-awesome.css" rel="stylesheet">
-	<!-- Custom Theme files -->
-	<script src="js/jquery-1.12.0.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<!--animate-->
-	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
-	<script src="js/wow.min.js"></script>
-	<script>
-		new WOW().init();
-	</script>
-	<!--//end-animate-->
-</head>
 
 <body>
 	<?php include('includes/header.php'); ?>
@@ -47,8 +24,8 @@ include('includes/config.php');
 					<a href="offers.html"><i class="fa fa-usd"></i></a>
 				</div>
 				<div class="rup-rgt">
-					<h3>UP TO USD. 50 OFF</h3>
-					<h4><a href="offers.html">TRAVEL SMART</a></h4>
+					<h3>HASTA USD. 50 DE DESCUENTO</h3>
+					<h4><a href="offers.html">VIAJE INTELIGENTE</a></h4>
 
 				</div>
 				<div class="clearfix"></div>
@@ -58,8 +35,8 @@ include('includes/config.php');
 					<a href="offers.html"><i class="fa fa-h-square"></i></a>
 				</div>
 				<div class="rup-rgt">
-					<h3>UP TO 70% OFF</h3>
-					<h4><a href="offers.html">ON HOTELS ACROSS WORLD</a></h4>
+					<h3>HASTA EL 70% DE DESCUENTO</h3>
+					<h4><a href="offers.html">EN HOTELES DE TODO EL MUNDO</a></h4>
 
 				</div>
 				<div class="clearfix"></div>
@@ -69,8 +46,8 @@ include('includes/config.php');
 					<a href="offers.html"><i class="fa fa-mobile"></i></a>
 				</div>
 				<div class="rup-rgt">
-					<h3>FLAT USD. 50 OFF</h3>
-					<h4><a href="offers.html">US APP OFFER</a></h4>
+					<h3>DESCUENTO DE 50 USD.</h3>
+					<h4><a href="offers.html">OFERTAS EN LA APP.</a></h4>
 
 				</div>
 				<div class="clearfix"></div>

@@ -16,7 +16,6 @@ if (strlen($_SESSION['alogin']) == 0) {
 		$query->bindParam(':cancelby', $cancelby, PDO::PARAM_STR);
 		$query->bindParam(':bid', $bid, PDO::PARAM_STR);
 		$query->execute();
-
 		$msg = "Reserva cancelada con éxito";
 	}
 
@@ -189,8 +188,6 @@ if (strlen($_SESSION['alogin']) == 0) {
 							</table>
 						</div>
 						</table>
-
-
 					</div>
 					<!-- script-for sticky-nav -->
 					<script>
@@ -204,13 +201,11 @@ if (strlen($_SESSION['alogin']) == 0) {
 									$(".header-main").removeClass("fixed");
 								}
 							});
-
 						});
 					</script>
 					<!-- /script-for sticky-nav -->
 					<!--inner block start here-->
 					<div class="inner-block">
-
 					</div>
 					<!--inner block end here-->
 					<!--copy rights start here-->
@@ -250,7 +245,6 @@ if (strlen($_SESSION['alogin']) == 0) {
 		<!-- Bootstrap Core JavaScript -->
 		<script src="js/bootstrap.min.js"></script>
 		<!-- /Bootstrap Core JavaScript -->
-
 	</body>
 
 	</html>

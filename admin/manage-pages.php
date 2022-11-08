@@ -147,64 +147,47 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 
 											switch ($_GET['type']) {
 												case "terms":
-													echo "Terms and Conditions";
+													echo "Términos y condiciones";
 													break;
 
 												case "privacy":
-													echo "Privacy And Policy";
+													echo "Política de privacidad";
 													break;
 
 												case "aboutus":
-													echo "About US";
+													echo "Acerca de";
 													break;
 												case "software":
-													echo "Offers";
+													echo "Ofertas";
 													break;
 												case "aspnet":
-													echo "Vission And MISSION";
+													echo "Visión y Misión";
 													break;
 												case "objectives":
-													echo "Objectives";
+													echo "Objetivos";
 													break;
 												case "disclaimer":
-													echo "Disclaimer";
+													echo "Exención de responsabilidad";
 													break;
 												case "vbnet":
-													echo "Partner With Us";
+													echo "Asóciese con nosotros";
 													break;
 												case "candc":
-													echo "Super Brand";
+													echo "Super Marca";
 													break;
 												case "contact":
-													echo "Contact Us";
+													echo "Contactanos";
 													break;
-
-
-
-
 												default:
 													echo "";
 													break;
 											}
-
-
-
-
-
 											?>
 										</div>
 									</div>
-
-
-
-
-
-
 									<div class="form-group">
 										<label for="focusedinput" class="col-sm-2 control-label">Detalles del paquete</label>
 										<div class="col-sm-8">
-
-
 											<textarea class="form-control" rows="5" cols="50" name="pgedetails" id="pgedetails" placeholder="Detalles del paquete" required>
 										<?php
 										$pagetype = $_GET['type'];
@@ -220,40 +203,22 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 											}
 										}
 										?>
-
 										</textarea>
 										</div>
 									</div>
-
-
 									<div class="row">
 										<div class="col-sm-8 col-sm-offset-2">
 											<button type="submit" name="submit" value="Update" id="submit" class="btn-primary btn">Actualizar</button>
-
-
 										</div>
 									</div>
-
-
-
-
-
 							</div>
-
 							</form>
-
-
-
-
-
 							<div class="panel-footer">
-
 							</div>
 							</form>
 						</div>
 					</div>
 					<!--//grid-->
-
 					<!-- script-for sticky-nav -->
 					<script>
 						$(document).ready(function() {

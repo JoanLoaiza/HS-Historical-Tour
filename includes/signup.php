@@ -50,9 +50,6 @@ if (isset($_POST['submit'])) {
 				<div class="modal-body modal-spa">
 					<div class="login-grids">
 						<div class="login">
-							<div class="login-left">
-								<img src="images\tour.jpg" alt=" " class="img-responsive" />
-							</div>
 							<div class="login-right">
 								<form name="signup" method="post">
 									<h3>Crea tu cuenta </h3>

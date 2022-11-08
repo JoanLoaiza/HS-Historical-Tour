@@ -12,10 +12,10 @@ if (isset($_POST['submit'])) {
 	$query->execute();
 	$lastInsertId = $dbh->lastInsertId();
 	if ($lastInsertId) {
-		$_SESSION['msg'] = "Info successfully submited ";
+		$_SESSION['msg'] = "Información enviada con éxito ";
 		echo "<script type='text/javascript'> document.location = 'thankyou.php'; </script>";
 	} else {
-		$_SESSION['msg'] = "Something went wrong. Please try again.";
+		$_SESSION['msg'] = "Algo ha ido mal. Por favor, inténtelo de nuevo.";
 		echo "<script type='text/javascript'> document.location = 'thankyou.php'; </script>";
 	}
 }

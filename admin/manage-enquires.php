@@ -119,12 +119,10 @@ if (strlen($_SESSION['alogin']) == 0) {
 										<th>ID ticket</th>
 										<th>Nombre</th>
 										<th>N° celular/ Email</th>
-
 										<th>Asunto </th>
 										<th>Descripción </th>
 										<th>Fecha publicación </th>
 										<th>Acción </th>
-
 									</tr>
 								</thead>
 								<tbody>
@@ -140,11 +138,8 @@ if (strlen($_SESSION['alogin']) == 0) {
 												<td width="50"><?php echo htmlentities($result->FullName); ?></td>
 												<td width="50"><?php echo htmlentities($result->MobileNumber); ?> /<br />
 													<?php echo $result->EmailId; ?></td>
-
-
 												<td width="200"><?php echo htmlentities($result->Subject); ?></a></td>
 												<td width="400"><?php echo htmlentities($result->Description); ?></td>
-
 												<td width="50"><?php echo htmlentities($result->PostingDate); ?></td>
 												<?php if ($result->Status == 1) {
 												?><td>Read</td>

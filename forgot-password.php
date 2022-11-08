@@ -19,37 +19,15 @@ if (isset($_POST['submit50'])) {
 		$chngpwd1->bindParam(':mobile', $mobile, PDO::PARAM_STR);
 		$chngpwd1->bindParam(':newpassword', $newpassword, PDO::PARAM_STR);
 		$chngpwd1->execute();
-		$msg = "Your Password succesfully changed";
+		$msg = "Su contraseña ha sido cambiada con éxito";
 	} else {
-		$error = "Email id or Mobile no is invalid";
+		$error = "La dirección de correo electrónico o el número de móvil no son válidos";
 	}
 }
 
 ?>
-<!DOCTYPE HTML>
-<html>
 
-<head>
-	<title>HS | Historical Tour</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="Tourism Management System In PHP" />
-	<script type="applijewelleryion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-	<link href="css/style.css" rel='stylesheet' type='text/css' />
-	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
-	<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
-	<link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-	<link href="css/font-awesome.css" rel="stylesheet">
-	<!-- Custom Theme files -->
-	<script src="js/jquery-1.12.0.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<!--animate-->
-	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
-	<script src="js/wow.min.js"></script>
-	<script>
-		new WOW().init();
-	</script>
+	<?php include('includes/head.php'); ?>
 	<script type="text/javascript">
 		function valid() {
 			if (document.chngpwd.newpassword.value != document.chngpwd.confirmpassword.value) {
@@ -87,14 +65,14 @@ if (isset($_POST['submit50'])) {
 		<?php include('includes/header.php'); ?>
 		<div class="banner-1 ">
 			<div class="container">
-				<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">TMS-Tourism Management System</h1>
+				<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">HS | Historical Tour</h1>
 			</div>
 		</div>
 		<!--- /banner-1 ---->
 		<!--- privacy ---->
 		<div class="privacy">
 			<div class="container">
-				<h3 class="wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">Recover Password</h3>
+				<h3 class="wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">Recuperar la contraseña</h3>
 				<form name="chngpwd" method="post" onSubmit="return valid();">
 					<?php if ($error) { ?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } else if ($msg) { ?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php } ?>
 					<p style="width: 350px;">
@@ -104,17 +82,17 @@ if (isset($_POST['submit50'])) {
 
 					<p style="width: 350px;">
 
-						<b>Número de celular</b> <input type="text" name="mobile" class="form-control" id="mobile" placeholder="Reg Mobile no" required="">
+						<b>Número de celular</b> <input type="text" name="mobile" class="form-control" id="mobile" placeholder="Númeor de celular" required="">
 					</p>
 
 					<p style="width: 350px;">
 						<b>Nueva contraseña</b>
-						<input type="password" class="form-control" name="newpassword" id="newpassword" placeholder="New Password" required="">
+						<input type="password" class="form-control" name="newpassword" id="newpassword" placeholder="Nueva contraseña" required="">
 					</p>
 
 					<p style="width: 350px;">
 						<b>Confirmar contraseña</b>
-						<input type="password" class="form-control" name="confirmpassword" id="confirmpassword" placeholder="Confrim Password" required="">
+						<input type="password" class="form-control" name="confirmpassword" id="confirmpassword" placeholder="Confirmar contraseña" required="">
 					</p>
 
 					<p style="width: 350px;">

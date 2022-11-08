@@ -25,7 +25,7 @@ if (isset($_POST['login'])) {
 <html>
 
 <head>
-	<title>TMS | Admin Sign in</title>
+	<title>HS | Inicio de sesión del administrador</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<script type="application/x-javascript">
@@ -53,34 +53,60 @@ if (isset($_POST['login'])) {
 	<!-- lined-icons -->
 	<link rel="stylesheet" href="css/icon-font.min.css" type='text/css' />
 	<!-- //lined-icons -->
+
+	<!-- Bulma -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 
 <body>
-	<div class="main-wthree">
-		<div class="container">
-			<div class="sin-w3-agile">
-				<h2>Sign In</h2>
+	<div class="hero is-fullheight">
+		<div class="hero-body is-justify-content-center is-align-items-center">
+			<div class="columns is-flex is-flex-direction-column box">
+				<div class="columns is-mobile is-centered">
+					<div class="column is-half">
+						<h1 class="title has-text-centered">Iniciar sesión</h1>
+					</div>
+				</div>
 				<form method="post">
-					<div class="username">
-						<span class="username">Username:</span>
-						<input type="text" name="username" class="name" placeholder="" required="">
+					<div class="column">
+						<span class="username">Nombre de usuario:</span>
+						<input type="text" name="username" class="name input is-primary" placeholder="" required="">
 						<div class="clearfix"></div>
 					</div>
-					<div class="password-agileits">
-						<span class="username">Password:</span>
-						<input type="password" name="password" class="password" placeholder="" required="">
+					<div class="column">
+						<span class="username">Contraseña:</span>
+						<input type="password" name="password" class="password input is-primary" placeholder="" required="">
 						<div class="clearfix"></div>
 					</div>
 
-					<div class="login-w3">
-						<input type="submit" class="login" name="login" value="Sign In">
+					<div class="column">
+						<input type="submit" class="login button is-primary is-fullwidth login" name="login" value="Entrar">
 					</div>
 					<div class="clearfix"></div>
 				</form>
-				<div class="back">
-					<a href="../index.php">Back to home</a>
+				<div>
+					<a href="../index.php" class="login button is-secondary is-fullwidth">Volver al inicio</a>
 				</div>
+			</div>
+		</div>
+	</div>
 
+
+	<div class="hero is-fullheight">
+		<div class="hero-body is-justify-content-center is-align-items-center">
+			<div class="columns is-flex is-flex-direction-column box">
+				<div class="column">
+					<label for="email">Nombre de usuario</label>
+					<input class="input is-primary" type="text" placeholder="" class="name" required="">
+				</div>
+				<div class="column">
+					<label for="Name">Contraseña</label>
+					<input class="input is-primary" type="password" placeholder="" name="password" required="">
+					<a href="forget.html" class="is-size-7 has-text-primary">Olvidó su contraseña?</a>
+				</div>
+				<div class="column">
+					<input class="button is-primary is-fullwidth login" type="submit" value="Entrar">
+				</div>
 			</div>
 		</div>
 	</div>

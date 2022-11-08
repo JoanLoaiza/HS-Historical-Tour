@@ -6,31 +6,8 @@ if (strlen($_SESSION['login']) == 0) {
 	header('location:index.php');
 } else {
 ?>
-	<!DOCTYPE HTML>
-	<html>
 
-	<head>
-		<title>HS | Historical Tour</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="keywords" content="Tourism Management System In PHP" />
-		<script type="applijewelleryion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-		<link href="css/style.css" rel='stylesheet' type='text/css' />
-		<link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
-		<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
-		<link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-		<link href="css/font-awesome.css" rel="stylesheet">
-		<!-- Custom Theme files -->
-		<script src="js/jquery-1.12.0.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<!--animate-->
-		<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
-		<script src="js/wow.min.js"></script>
-		<script>
-			new WOW().init();
-		</script>
-
+<?php include ('./includes/head.php')?>
 		<style>
 			.errorWrap {
 				padding: 10px;
@@ -65,7 +42,7 @@ if (strlen($_SESSION['login']) == 0) {
 			<!--- privacy ---->
 			<div class="privacy">
 				<div class="container">
-					<h3 class="wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">Issue Tickets</h3>
+					<h3 class="wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">Emitir boletos</h3>
 					<form name="chngpwd" method="post" onSubmit="return valid();">
 						<?php if ($error) { ?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } else if ($msg) { ?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php } ?>
 						<p>
@@ -78,11 +55,8 @@ if (strlen($_SESSION['login']) == 0) {
 								<th>Comentario admin</th>
 								<th>Fecha de registro</th>
 								<th>Fecha de comentario</th>
-								
-
 							</tr>
 							<?php
-
 							$uemail = $_SESSION['login'];;
 							$sql = "SELECT * from tblissues where UserEmail=:uemail";
 							$query = $dbh->prepare($sql);

@@ -18,17 +18,12 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 		$msg = "Consulta cancelada con éxito";
 	}
-
-
-
-
-
 ?>
 	<!DOCTYPE HTML>
 	<html>
 
 	<head>
-		<title>HS | Admin Gestionsr Problemas</title>
+		<title>HS | Admin Gestión Problemas</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<script type="application/x-javascript">
@@ -155,13 +150,9 @@ if (strlen($_SESSION['alogin']) == 0) {
 												<td width="50"><?php echo htmlentities($result->fname); ?></td>
 												<td width="50"><?php echo htmlentities($result->mnumber); ?></td>
 												<td width="50"><?php echo htmlentities($result->email); ?></td>
-
 												<td width="200"><?php echo htmlentities($result->issue); ?></a></td>
 												<td width="400"><?php echo htmlentities($result->Description); ?></td>
-
 												<td width="50"><?php echo htmlentities($result->PostingDate); ?></td>
-
-
 												<td><a href="javascript:void(0);" onClick="popUpWindow('updateissue.php?iid=<?php echo ($result->id); ?>');">View </a>
 												</td>
 
@@ -172,8 +163,6 @@ if (strlen($_SESSION['alogin']) == 0) {
 							</table>
 						</div>
 						</table>
-
-
 					</div>
 					<!-- script-for sticky-nav -->
 					<script>
@@ -223,7 +212,6 @@ if (strlen($_SESSION['alogin']) == 0) {
 						});
 					}, 400);
 				}
-
 				toggle = !toggle;
 			});
 		</script>
